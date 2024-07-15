@@ -1,0 +1,19 @@
+//STM32Duino
+
+//Roger Clark variant
+
+//Official 1.8
+https://github.com/stm32duino/BoardManagerFiles/raw/master/STM32/package_stm_index.json
+
+//Official 2.0
+https://github.com/stm32duino/BoardManagerFiles/raw/master/package_stmicroelectronics_index.json
+
+
+//Instrucciones
+
+*ISD	500	500	500	500	500	500	500	500
+*DST	5	10	15	20	25	30	35	40
+
+Tareas de ESP32 en Arduino están limitadas por arduino a una pila de 64 bytes !!!!
+
+Para deshabilitar el sistema de resets y activaciones, hay que poner los comandos: "BE", "BI", "BT"

@@ -1,0 +1,841 @@
+{
+  "version": "1.00",
+  "projectName": "C:\\Users\\user_01\\OneDrive - ICIQ\\FOTORREACTORES\\Photo RX\\Software\\PhotoRX\\PhotoRX_Menu.emf",
+  "author": "user_01",
+  "items": [
+    {
+      "parentId": 0,
+      "type": "subMenu",
+      "item": {
+        "secured": false,
+        "name": "Settings",
+        "variableName": "Settings",
+        "id": 1,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 1,
+      "type": "actionMenu",
+      "item": {
+        "name": "Set Mode 1",
+        "variableName": "SetMode1",
+        "id": 2,
+        "eepromAddress": -1,
+        "functionName": "onSetMode1",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 1,
+      "type": "actionMenu",
+      "item": {
+        "name": "Set Mode 2",
+        "variableName": "SetMode2",
+        "id": 9,
+        "eepromAddress": -1,
+        "functionName": "onSetMode2",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 1,
+      "type": "actionMenu",
+      "item": {
+        "name": "Set Current Config",
+        "variableName": "SetCurrent",
+        "id": 61,
+        "eepromAddress": -1,
+        "functionName": "onSetCurrent",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 1,
+      "type": "actionMenu",
+      "item": {
+        "name": "Reset Config",
+        "variableName": "ResetConfig",
+        "id": 62,
+        "eepromAddress": -1,
+        "functionName": "onResetConfig",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 1,
+      "type": "subMenu",
+      "item": {
+        "secured": false,
+        "name": "Configuration",
+        "variableName": "Configuration",
+        "id": 3,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 3,
+      "type": "enumItem",
+      "item": {
+        "enumEntries": [
+          "SMALL (32x)",
+          "MEDIUM (4x)",
+          "BIG (1x)",
+          "KILO (1)"
+        ],
+        "name": "Vial Config",
+        "variableName": "VialConf",
+        "id": 5,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 3,
+      "type": "enumItem",
+      "item": {
+        "enumEntries": [
+          "Left",
+          "Right",
+          "Both"
+        ],
+        "name": "Reactor Side",
+        "variableName": "ReactorSide",
+        "id": 60,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 3,
+      "type": "enumItem",
+      "item": {
+        "enumEntries": [
+          "OO",
+          "OX",
+          "XO",
+          "XX"
+        ],
+        "name": "SelectModule",
+        "variableName": "SquareConfig",
+        "id": 49,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 3,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 100,
+        "offset": 0,
+        "divisor": 0,
+        "unitName": "%",
+        "name": "Percentage",
+        "variableName": "Percentage",
+        "id": 7,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 3,
+      "type": "subMenu",
+      "item": {
+        "secured": false,
+        "name": "Experiment Time",
+        "variableName": "ExperimentTime",
+        "id": 44,
+        "eepromAddress": -1,
+        "functionName": "",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 44,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 168,
+        "offset": 0,
+        "divisor": 1,
+        "unitName": "",
+        "name": "Hours",
+        "variableName": "Hours",
+        "id": 45,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 44,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 60,
+        "offset": 0,
+        "divisor": 1,
+        "unitName": "",
+        "name": "Minutes",
+        "variableName": "Minutes",
+        "id": 46,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 44,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 60,
+        "offset": 0,
+        "divisor": 1,
+        "unitName": "",
+        "name": "Seconds",
+        "variableName": "Seconds",
+        "id": 47,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 3,
+      "type": "actionMenu",
+      "item": {
+        "name": "SaveToMode2",
+        "variableName": "SaveToMode2",
+        "id": 51,
+        "eepromAddress": -1,
+        "functionName": "onSaveToMode2",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 3,
+      "type": "actionMenu",
+      "item": {
+        "name": "SaveToMode1",
+        "variableName": "SaveToMode1",
+        "id": 50,
+        "eepromAddress": -1,
+        "functionName": "onSaveToMode1",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "actionMenu",
+      "item": {
+        "name": "Start Experiment",
+        "variableName": "StartExperiment",
+        "id": 48,
+        "eepromAddress": -1,
+        "functionName": "onChangeStartExperiment",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "actionMenu",
+      "item": {
+        "name": "Emergency Stop",
+        "variableName": "EmergencyStop",
+        "id": 4,
+        "eepromAddress": -1,
+        "functionName": "onChangeEmergencyStop",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "subMenu",
+      "item": {
+        "secured": false,
+        "name": "Current Consumpion",
+        "variableName": "CurrentConsumpion",
+        "id": 25,
+        "eepromAddress": -1,
+        "functionName": "",
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 25,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 3000,
+        "offset": 0,
+        "divisor": 1,
+        "unitName": "mA",
+        "name": "Channel 0",
+        "variableName": "Channel0",
+        "id": 26,
+        "eepromAddress": -1,
+        "readOnly": true,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 25,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 3000,
+        "offset": 0,
+        "divisor": 1,
+        "unitName": "mA",
+        "name": "Channel 1",
+        "variableName": "Channel1",
+        "id": 27,
+        "eepromAddress": -1,
+        "functionName": "",
+        "readOnly": true,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 25,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 3000,
+        "offset": 0,
+        "divisor": 1,
+        "unitName": "mA",
+        "name": "Channel 2",
+        "variableName": "Channel2",
+        "id": 28,
+        "eepromAddress": -1,
+        "functionName": "",
+        "readOnly": true,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 25,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 3000,
+        "offset": 0,
+        "divisor": 1,
+        "unitName": "mA",
+        "name": "Channel 3",
+        "variableName": "Channel3",
+        "id": 29,
+        "eepromAddress": -1,
+        "functionName": "",
+        "readOnly": true,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 25,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 3000,
+        "offset": 0,
+        "divisor": 1,
+        "unitName": "mA",
+        "name": "Channel 4",
+        "variableName": "Channel4",
+        "id": 30,
+        "eepromAddress": -1,
+        "functionName": "",
+        "readOnly": true,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 25,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 3000,
+        "offset": 0,
+        "divisor": 1,
+        "unitName": "mA",
+        "name": "Channel 5",
+        "variableName": "Channel5",
+        "id": 31,
+        "eepromAddress": -1,
+        "functionName": "",
+        "readOnly": true,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 25,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 3000,
+        "offset": 0,
+        "divisor": 1,
+        "unitName": "mA",
+        "name": "Channel 6",
+        "variableName": "Channel6",
+        "id": 32,
+        "eepromAddress": -1,
+        "functionName": "",
+        "readOnly": true,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 25,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 3000,
+        "offset": 0,
+        "divisor": 1,
+        "unitName": "mA",
+        "name": "Channel 7",
+        "variableName": "Channel7",
+        "id": 33,
+        "eepromAddress": -1,
+        "functionName": "",
+        "readOnly": true,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 25,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 3000,
+        "offset": 0,
+        "divisor": 1,
+        "unitName": "mA",
+        "name": "Channel 8",
+        "variableName": "Channel8",
+        "id": 34,
+        "eepromAddress": -1,
+        "functionName": "",
+        "readOnly": true,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 25,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 3000,
+        "offset": 0,
+        "divisor": 1,
+        "unitName": "mA",
+        "name": "Channel 9",
+        "variableName": "Channel9",
+        "id": 35,
+        "eepromAddress": -1,
+        "functionName": "",
+        "readOnly": true,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 25,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 3000,
+        "offset": 0,
+        "divisor": 1,
+        "unitName": "mA",
+        "name": "Channel 10",
+        "variableName": "Channel10",
+        "id": 36,
+        "eepromAddress": -1,
+        "functionName": "",
+        "readOnly": true,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 25,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 3000,
+        "offset": 0,
+        "divisor": 1,
+        "unitName": "mA",
+        "name": "Channel 11",
+        "variableName": "Channel11",
+        "id": 37,
+        "eepromAddress": -1,
+        "functionName": "",
+        "readOnly": true,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 25,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 3000,
+        "offset": 0,
+        "divisor": 1,
+        "unitName": "mA",
+        "name": "Channel 12",
+        "variableName": "Channel12",
+        "id": 38,
+        "eepromAddress": -1,
+        "functionName": "",
+        "readOnly": true,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 25,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 3000,
+        "offset": 0,
+        "divisor": 1,
+        "unitName": "mA",
+        "name": "Channel 13",
+        "variableName": "Channel13",
+        "id": 39,
+        "eepromAddress": -1,
+        "functionName": "",
+        "readOnly": true,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 25,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 3000,
+        "offset": 0,
+        "divisor": 1,
+        "unitName": "mA",
+        "name": "Channel 14",
+        "variableName": "Channel14",
+        "id": 40,
+        "eepromAddress": -1,
+        "functionName": "",
+        "readOnly": true,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 25,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 3000,
+        "offset": 0,
+        "divisor": 1,
+        "unitName": "mA",
+        "name": "Channel 15",
+        "variableName": "Channel15",
+        "id": 41,
+        "eepromAddress": -1,
+        "functionName": "",
+        "readOnly": true,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "textItem",
+      "item": {
+        "textLength": 5,
+        "itemType": "GREGORIAN_DATE",
+        "name": "Date",
+        "variableName": "Date",
+        "id": 42,
+        "eepromAddress": -1,
+        "readOnly": true,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "textItem",
+      "item": {
+        "textLength": 5,
+        "itemType": "TIME_24H_HHMM",
+        "name": "Time",
+        "variableName": "Time",
+        "id": 43,
+        "eepromAddress": -1,
+        "readOnly": true,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "subMenu",
+      "item": {
+        "secured": false,
+        "name": "Temperatures",
+        "variableName": "Temperatures",
+        "id": 53,
+        "eepromAddress": -1,
+        "readOnly": false,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 53,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 255,
+        "offset": -127,
+        "divisor": 1,
+        "unitName": "C",
+        "name": "Temperature PCP1 ",
+        "variableName": "TemperaturePCP1",
+        "id": 54,
+        "eepromAddress": -1,
+        "readOnly": true,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 53,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 255,
+        "offset": -127,
+        "divisor": 1,
+        "unitName": "C",
+        "name": "Temperature PCP2",
+        "variableName": "TemperaturePCP2",
+        "id": 55,
+        "eepromAddress": -1,
+        "readOnly": true,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 53,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 255,
+        "offset": -127,
+        "divisor": 1,
+        "unitName": "C",
+        "name": "Temperature PCP3",
+        "variableName": "TemperaturePCP3",
+        "id": 56,
+        "eepromAddress": -1,
+        "readOnly": true,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 53,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 255,
+        "offset": -127,
+        "divisor": 1,
+        "unitName": "C",
+        "name": "Temperature PCP4",
+        "variableName": "TemperaturePCP4",
+        "id": 57,
+        "eepromAddress": -1,
+        "readOnly": true,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 53,
+      "type": "analogItem",
+      "item": {
+        "maxValue": 255,
+        "offset": -127,
+        "divisor": 1,
+        "unitName": "C",
+        "name": "Motherboard Temp",
+        "variableName": "MotherboardTemp",
+        "id": 59,
+        "eepromAddress": -1,
+        "readOnly": true,
+        "localOnly": false,
+        "visible": true
+      }
+    },
+    {
+      "parentId": 0,
+      "type": "textItem",
+      "item": {
+        "textLength": 20,
+        "itemType": "PLAIN_TEXT",
+        "name": "Log Message",
+        "variableName": "LogMessage",
+        "id": 58,
+        "eepromAddress": -1,
+        "readOnly": true,
+        "localOnly": false,
+        "visible": true
+      }
+    }
+  ],
+  "codeOptions": {
+    "embeddedPlatform": "ARDUINO_ESP32",
+    "lastDisplayUuid": "e6342680-6fab-4d1b-ac08-ce8dbfc0974c",
+    "lastInputUuid": "6dd87e7d-e751-4912-a70d-91793b1d3d87",
+    "lastRemoteUuid": "2c101fec-1f7d-4ff3-8d2b-992ad41e7fcb",
+    "lastThemeUuid": "e3d447ef-a620-47fa-9a3c-012665b30bdf",
+    "applicationUUID": "8eb52efc-817f-4e31-bcde-388523cf9d6d",
+    "applicationName": "PhotoRXMenu",
+    "lastProperties": [
+      {
+        "name": "DISPLAY_VARIABLE",
+        "latestValue": "tft",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "DISPLAY_ROTATION",
+        "latestValue": "1",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "DOUBLE_BUFFER_ROWS",
+        "latestValue": "0",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "UPDATES_PER_SEC",
+        "latestValue": "20",
+        "subsystem": "DISPLAY"
+      },
+      {
+        "name": "PULLUP_LOGIC",
+        "latestValue": "true",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "INTERRUPT_SWITCHES",
+        "latestValue": "false",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "SWITCH_IODEVICE",
+        "latestValue": "",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ENCODER_PIN_A",
+        "latestValue": "39",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ENCODER_PIN_B",
+        "latestValue": "36",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ENCODER_PIN_OK",
+        "latestValue": "34",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ENCODER_BACK_PIN",
+        "latestValue": "-1",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ENCODER_NEXT_PIN",
+        "latestValue": "-1",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ENCODER_IS_QUARTER_CYCLE",
+        "latestValue": "false",
+        "subsystem": "INPUT"
+      },
+      {
+        "name": "ITEM_FONT",
+        "latestValue": "num:,2",
+        "subsystem": "THEME"
+      },
+      {
+        "name": "TITLE_FONT",
+        "latestValue": "num:,4",
+        "subsystem": "THEME"
+      },
+      {
+        "name": "BORDER_FOR_ACTIONS",
+        "latestValue": "0",
+        "subsystem": "THEME"
+      },
+      {
+        "name": "TITLE_SHOW_MODE",
+        "latestValue": "TITLE_FIRST_ROW",
+        "subsystem": "THEME"
+      },
+      {
+        "name": "USE_SLIDER_ANALOG",
+        "latestValue": "true",
+        "subsystem": "THEME"
+      },
+      {
+        "name": "NEED_EDITING_ICONS",
+        "latestValue": "true",
+        "subsystem": "THEME"
+      }
+    ],
+    "namingRecursive": false,
+    "saveToSrc": true,
+    "useCppMain": false
+  }
+}
